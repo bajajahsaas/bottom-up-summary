@@ -1,0 +1,75 @@
+2020-05-21 03:10:12,828 - INFO - pytorch_pretrained_bert.modeling - Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .
+2020-05-21 03:10:16,534 - INFO - pytorch_transformers.modeling_bert - Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .
+2020-05-21 03:10:16,550 - INFO - pytorch_transformers.modeling_xlnet - Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .
+2020-05-21 03:10:19,883 - INFO - allennlp.common.registrable - instantiating registered subclass relu of <class 'allennlp.nn.activations.Activation'>
+2020-05-21 03:10:19,886 - INFO - allennlp.common.registrable - instantiating registered subclass relu of <class 'allennlp.nn.activations.Activation'>
+2020-05-21 03:10:19,890 - INFO - allennlp.common.registrable - instantiating registered subclass relu of <class 'allennlp.nn.activations.Activation'>
+2020-05-21 03:10:19,894 - INFO - allennlp.common.registrable - instantiating registered subclass relu of <class 'allennlp.nn.activations.Activation'>
+2020-05-21 03:10:20,356 - WARNING - allennlp.common.params - _jsonnet not loaded, treating allennlp_config/simple_tagger.json as json
+2020-05-21 03:10:20,371 - INFO - allennlp.common.params - random_seed = 13370
+2020-05-21 03:10:20,371 - INFO - allennlp.common.params - numpy_seed = 1337
+2020-05-21 03:10:20,371 - INFO - allennlp.common.params - pytorch_seed = 133
+2020-05-21 03:10:21,338 - INFO - allennlp.common.checks - Pytorch version: 1.3.0
+2020-05-21 03:10:21,343 - INFO - allennlp.common.params - evaluate_on_test = False
+2020-05-21 03:10:21,343 - INFO - allennlp.common.params - validation_dataset_reader = None
+2020-05-21 03:10:21,343 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.dataset_readers.dataset_reader.DatasetReader'> from params {'type': 'sequence_tagging', 'word_tag_delimiter': '###', 'token_indexers': {'tokens': {'type': 'single_id', 'lowercase_tokens': True}, 'token_characters': {'type': 'characters'}}} and extras set()
+2020-05-21 03:10:21,343 - INFO - allennlp.common.params - dataset_reader.type = sequence_tagging
+2020-05-21 03:10:21,344 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.dataset_readers.sequence_tagging.SequenceTaggingDatasetReader'> from params {'word_tag_delimiter': '###', 'token_indexers': {'tokens': {'type': 'single_id', 'lowercase_tokens': True}, 'token_characters': {'type': 'characters'}}} and extras set()
+2020-05-21 03:10:21,344 - INFO - allennlp.common.params - dataset_reader.word_tag_delimiter = ###
+2020-05-21 03:10:21,344 - INFO - allennlp.common.params - dataset_reader.token_delimiter = None
+2020-05-21 03:10:21,344 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.token_indexers.token_indexer.TokenIndexer'> from params {'type': 'single_id', 'lowercase_tokens': True} and extras set()
+2020-05-21 03:10:21,344 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.type = single_id
+2020-05-21 03:10:21,344 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.token_indexers.single_id_token_indexer.SingleIdTokenIndexer'> from params {'lowercase_tokens': True} and extras set()
+2020-05-21 03:10:21,344 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.namespace = tokens
+2020-05-21 03:10:21,345 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.lowercase_tokens = True
+2020-05-21 03:10:21,345 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.start_tokens = None
+2020-05-21 03:10:21,345 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.end_tokens = None
+2020-05-21 03:10:21,345 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.token_min_padding_length = 0
+2020-05-21 03:10:21,345 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.token_indexers.token_indexer.TokenIndexer'> from params {'type': 'characters'} and extras set()
+2020-05-21 03:10:21,345 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.type = characters
+2020-05-21 03:10:21,345 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.token_indexers.token_characters_indexer.TokenCharactersIndexer'> from params {} and extras set()
+2020-05-21 03:10:21,345 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.namespace = token_characters
+2020-05-21 03:10:21,346 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.start_tokens = None
+2020-05-21 03:10:21,346 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.end_tokens = None
+2020-05-21 03:10:21,346 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.min_padding_length = 0
+2020-05-21 03:10:21,346 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.token_min_padding_length = 0
+/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/data/token_indexers/token_characters_indexer.py:56: UserWarning: You are using the default value (0) of `min_padding_length`, which can cause some subtle bugs (more info see https://github.com/allenai/allennlp/issues/1954). Strongly recommend to set a value, usually the maximum size of the convolutional layer size when using CnnEncoder.
+  UserWarning)
+2020-05-21 03:10:21,360 - INFO - allennlp.common.params - dataset_reader.lazy = False
+2020-05-21 03:10:21,360 - INFO - allennlp.common.params - train_data_path = data/only_phrases/multicopy.train.75k.txt
+2020-05-21 03:10:21,361 - INFO - allennlp.training.util - Reading training data from data/only_phrases/multicopy.train.75k.txt
+0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/abajaj/anaconda3/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/abajaj/anaconda3/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/run.py", line 21, in <module>
+    run()
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/run.py", line 18, in run
+    main(prog="allennlp")
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/commands/__init__.py", line 102, in main
+    args.func(args)
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/commands/train.py", line 124, in train_model_from_args
+    args.cache_prefix)
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/commands/train.py", line 168, in train_model_from_file
+    cache_directory, cache_prefix)
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/commands/train.py", line 226, in train_model
+    cache_prefix)
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/training/trainer_pieces.py", line 42, in from_params
+    all_datasets = training_util.datasets_from_params(params, cache_directory, cache_prefix)
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/training/util.py", line 178, in datasets_from_params
+    train_data = dataset_reader.read(train_data_path)
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/data/dataset_readers/dataset_reader.py", line 134, in read
+    instances = [instance for instance in Tqdm.tqdm(instances)]
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/data/dataset_readers/dataset_reader.py", line 134, in <listcomp>
+    instances = [instance for instance in Tqdm.tqdm(instances)]
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/tqdm/std.py", line 1108, in __iter__
+    for obj in iterable:
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/data/dataset_readers/sequence_tagging.py", line 52, in _read
+    file_path = cached_path(file_path)
+  File "/home/abajaj/anaconda3/lib/python3.7/site-packages/allennlp/common/file_utils.py", line 106, in cached_path
+    raise FileNotFoundError("file {} not found".format(url_or_filename))
+FileNotFoundError: file data/only_phrases/multicopy.train.75k.txt not found
+0it [00:00, ?it/s]
+
