@@ -50,6 +50,6 @@
     "num_epochs": 10,
     "grad_clipping": 2,
     "patience": 10,
-    "cuda_device": -1
+    "cuda_device": 0,
   }
 }
