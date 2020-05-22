@@ -1,5 +1,5 @@
-predictionfile=simple_tagger_output.txt
-outfname=simple_tagger_summary.txt
+predictionfile=outputs/simple_tagger_output.txt
+outfname=outputs/simple_tagger_summary.txt
 tgtfile=data/processed/multicopy.test.src.txt
 
 python prediction_to_text.py -data $predictionfile \
