@@ -9,9 +9,6 @@
 #
 #SBATCH --ntasks=1
 
-
 # python -m allennlp.run train  allennlp_config/elmo_tagger.json  --serialization-dir elmo_tagger
-
 #python -m allennlp.run train  allennlp_config/elmo_tagger_crf.json  --serialization-dir elmo_tagger_crf
-
 python -m allennlp.run train  allennlp_config/simple_tagger.json  --serialization-dir simple_tagger
