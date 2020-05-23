@@ -84,9 +84,9 @@ def main():
     SOURCE_PATH = opt.src
     TARGET_PATH = opt.tgt
 
-    NEW_TARGET_PATH = opt.output + ".txt"
-    PRED_SRC_PATH = opt.output + ".pred.txt"
-    PRED_TGT_PATH = opt.output + ".src.txt"
+    NEW_TARGET_PATH = opt.output + ".txt"  # model training (allennlp)
+    PRED_SRC_PATH = opt.output + ".pred.txt" # json {sentence : }
+    PRED_TGT_PATH = opt.output + ".src.txt"  # 0, 1
 
     with codecs.open(SOURCE_PATH, 'r') as sfile:
         for ix, l in enumerate(sfile):
