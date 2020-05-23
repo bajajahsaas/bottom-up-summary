@@ -20,13 +20,13 @@
             "tokens": {
                     "type": "embedding",
                     "embedding_dim": 100,
-                    "pretrained_file": "../duolingo/data/glove.6B.100d.txt.gz",
+                    "pretrained_file": "../elmo/glove.6B.100d.txt.gz",
                     "trainable": true
             },
            "elmo": {
                 "type": "elmo_token_embedder",
-                "options_file": "../duolingo/data/elmo_2x4096_512_2048cnn_2xhighway_options.json",
-                "weight_file": "../duolingo/data/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5",
+                "options_file": "../elmo/elmo_2x4096_512_2048cnn_2xhighway_options.json",
+                "weight_file": "../elmo/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5",
                 "do_layer_norm": true,
                 "dropout": 0.5
             }
