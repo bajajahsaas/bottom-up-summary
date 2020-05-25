@@ -13,6 +13,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score
 from sklearn.metrics import roc_curve
+from scipy.special import softmax
 print("Loaded libraries...")
 
 
@@ -154,7 +155,17 @@ def main():
         cline = json.loads(line)
         words = cline['words']
         # print("len words", len(words))
-        probs = [p[1] for p in cline['class_probabilities'][:len(words)]]
+        key = 'class_probabilities'
+        if key in cline:
+            probs = [p[1] for p in cline['class_probabilities'][:len(words)]]
+        else:
+            # get prob from logits
+            logits = [p for p in cline['logits'][:len(words)]]
+            probs = []
+            for log in logits:
+                probability = softmax(log)
+                probs.append(probability[1])
+
         tags = [1 if p > opt.threshold else 0 for p in probs]
 
         if opt.output:

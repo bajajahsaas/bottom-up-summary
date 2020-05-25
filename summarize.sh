@@ -6,7 +6,7 @@ tgtfile=data/processed/multicopy.test.src.txt
 python prediction_to_text.py -data $predictionfile \
                              -output $outfname \
                              -tgt $tgtfile \
-                             -threshold 0.31 \
+                             -threshold 0.2 \
                              -divider "" \
                              -style sentences \
                              -prune 40000
